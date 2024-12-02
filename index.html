@@ -16,19 +16,41 @@
             </div>
 
             <!-- ส่วนของ navigation menu -->
-            <nav class="flex space-x-6"> <!-- space กำหนดระยะห่าง -->
+            <nav class="hidded flex  space-x-6"> <!-- space กำหนดระยะห่าง -->
                 <a href="" class="hover:bg-black-300 hover:text-blue-900 px-4 py-4 rounded transition">HOME</a>
                 <a href="" class="hover:bg-black-300 hover:text-blue-900 px-4 py-4 rounded transition">ABOUT</a>
                 <a href="" class="hover:bg-black-300 hover:text-blue-900 px-4 py-4 rounded transition">PRODUCT</a>
                 <a href="" class="hover:bg-black-300 hover:text-blue-900 px-4 py-4 rounded transition">CONTACT</a>
             </nav>
 
-            <!-- lg-hidden คือการซ่อนปุ่มในหน้าจอขนาดใหญ่ -->
-            <button class="hidden">
-                hemberger
+           
+            <button class="md:hidden text-white text-3xl" id="hamberger">
+                &#9776;
             </button>
+            
+            
     </div>
 </header>
+
+<div id="hamberger-menu" class="md-hidden bg-white text-blue-900 py-4 hidden">
+    <nav class="flex flex-col space-y-4 px-6">
+        <a href="#" class="hover:bg-gray-300 hover:text-blue-900 px-4 rounded transition">HOME</a>
+        <a href="#" class="hover:bg-gray-300 hover:text-blue-900 px-4 rounded transition">ABOUT</a>
+        <a href="#" class="hover:bg-gray-300 hover:text-blue-900 px-4 rounded transition">PRODUCT</a>
+        <a href="#" class="hover:bg-gray-300 hover:text-blue-900 px-4 rounded transition">CONTACT</a>        
+    </nav>
+</div>
+<script>
+
+const hambergerButton = document.getElementById('hamberger');
+const hambergerMenu = document.getElementById('hamberger-menu');
+
+hambergerButton.addEventListener('click', () => {
+  hambergerMenu.classList.toggle('hidden'); 
+});
+     
+</script>
+
     <!-- Carousel -->
     <section class="container mx-auto px-6 my-8">
         <h2 class="text-2xl font-bold mb-4">Letest Gadgets</h2>
@@ -44,5 +66,47 @@
             </div>
         </div>
     </section>
+
+     <!-- Card -->
+     <section class="container mx-auto px-6 my-8">
+        <h2 class="text-2xl font-bold mb-4">Feature Product</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold">วิว 1</h3>
+            <p class="text-gray-600 mt-2">ธรรมชาติ</p>
+            <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">อ่านเพิ่มเติม</button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold">วิว 2</h3>
+            <p class="text-gray-600 mt-2">ธรรมชาติ</p>
+            <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">อ่านเพิ่มเติม</button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold">วิว 3</h3>
+            <p class="text-gray-600 mt-2">ธรรมชาติ</p>
+            <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">อ่านเพิ่มเติม</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer-->
+      <footer class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+          <p>&copy; 2024 IT World. All right reserved</p>
+          <p class="mt-2">Follow us in sociala media for the lasted updaate.</p>
+        </div>
+      </footer>
+
+
+
+
+
 </body>
 </html>
