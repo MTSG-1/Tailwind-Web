@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="bg-gray-900 text-white"> <!-- ใส่สีพื้นหลังและข้อความ -->
+
+    <!-- ส่วนของ navigation bar -->
+    <header class="bg-blue-600 text-black-100 py-4">
+        <div class="container mx-auto px-6 flex items-center justify-between">
+            <div>
+                <h1 class="text-2xl font-bold">IT CHAMPION</h1>
+            </div>
+
+            <nav class="hidden lg:flex space-x-6">
+                <a href="index.html" class="hover:bg-black-300 hover:text-blue-900 px-4 py-2 rounded transition">HOME</a>
+                <a href="about.html" class="hover:bg-black-300 hover:text-blue-900 px-4 py-2 rounded transition">ABOUT</a>
+                <a href="product.html" class="hover:bg-black-300 hover:text-blue-900 px-4 py-2 rounded transition">PRODUCT</a>
+                <a href="contact.html" class="hover:bg-black-300 hover:text-blue-900 px-4 py-2 rounded transition">CONTACT</a>
+            </nav>
+
+           
+            <button class="lg:hidden text-white text-3xl" id="hamberger">
+              &#9776;
+          </button>
+            
+            
+    </div>
+</header>
+
+<div id="hamberger-menu" class="md-hidden bg-white text-blue-900 py-4 hidden">
+    <nav class="flex flex-col space-y-4 px-6">
+        <a href="index.html" class="hover:bg-gray-300 hover:text-blue-900 px-4 rounded transition">HOME</a>
+        <a href="about.html" class="hover:bg-gray-300 hover:text-blue-900 px-4 rounded transition">ABOUT</a>
+        <a href="product.html" class="hover:bg-gray-300 hover:text-blue-900 px-4 rounded transition">PRODUCT</a>
+        <a href="contact.html" class="hover:bg-gray-300 hover:text-blue-900 px-4 rounded transition">CONTACT</a>        
+    </nav>
+</div>
+<script>
+
+const hambergerButton = document.getElementById('hamberger');
+const hambergerMenu = document.getElementById('hamberger-menu');
+
+hambergerButton.addEventListener('click', () => {
+  hambergerMenu.classList.toggle('hidden'); 
+});
+     
+</script>
+<br>
+<br>
+<section class="container mx-auto px-6 py-12">
+    <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-white mb-4">About Us</h1>
+      
+    </div>
+   
+     
+    <!-- Long Description -->
+    <div class="mt-12 p-6 bg-gray-50 rounded-lg shadow-md">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-4">IT CHAMPION</h2>
+        <p class="text-gray-600 leading-relaxed">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque est voluptatum, laudantium in eveniet maxime nulla sapiente vitae at voluptatibus corporis libero, tempora, a illum saepe. Dolorem nam porro voluptatum provident cumque at quam error sint quasi, distinctio nisi illo beatae ad dignissimos deserunt, molestias repudiandae nostrum reiciendis nobis, ratione similique! Beatae maiores quod eveniet provident eius voluptates dolore inventore.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque est voluptatum, laudantium in eveniet maxime nulla sapiente vitae at voluptatibus corporis libero, tempora, a illum saepe. Dolorem nam porro voluptatum provident cumque at quam error sint quasi, distinctio nisi illo beatae ad dignissimos deserunt, molestias repudiandae nostrum reiciendis nobis, ratione similique! Beatae maiores quod eveniet provident eius voluptates dolore inventore.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque est voluptatum, laudantium in eveniet maxime nulla sapiente vitae at voluptatibus corporis libero, tempora, a illum saepe. Dolorem nam porro voluptatum provident cumque at quam error sint quasi, distinctio nisi illo beatae ad dignissimos deserunt, molestias repudiandae nostrum reiciendis nobis, ratione similique! Beatae maiores quod eveniet provident eius voluptates dolore inventore.
+        </p>
+       
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer class="bg-blue-600 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 IT World. All right reserved</p>
+      <p class="mt-2">Follow us in sociala media for the lasted updaate.</p>
+    </div>
+  </footer>
+    
+  
+</body>
+</html>

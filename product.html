@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="bg-gray-900 text-white"> <!-- ใส่สีพื้นหลังและข้อความ -->
+
+    <!-- ส่วนของ navigation bar -->
+    <header class="bg-blue-600 text-black-100 py-4">
+        <div class="container mx-auto px-6 flex items-center justify-between">
+            <div>
+                <h1 class="text-2xl font-bold">IT CHAMPION</h1>
+            </div>
+
+            <nav class="hidden lg:flex space-x-6">
+                <a href="index.html" class="hover:bg-black-300 hover:text-blue-900 px-4 py-2 rounded transition">HOME</a>
+                <a href="about.html" class="hover:bg-black-300 hover:text-blue-900 px-4 py-2 rounded transition">ABOUT</a>
+                <a href="product.html" class="hover:bg-black-300 hover:text-blue-900 px-4 py-2 rounded transition">PRODUCT</a>
+                <a href="contact.html" class="hover:bg-black-300 hover:text-blue-900 px-4 py-2 rounded transition">CONTACT</a>
+            </nav>
+
+           
+            <button class="lg:hidden text-white text-3xl" id="hamberger">
+              &#9776;
+          </button>
+            
+            
+    </div>
+</header>
+
+<div id="hamberger-menu" class="md-hidden bg-white text-blue-900 py-4 hidden">
+    <nav class="flex flex-col space-y-4 px-6">
+        <a href="index.html" class="hover:bg-gray-300 hover:text-blue-900 px-4 rounded transition">HOME</a>
+        <a href="about.html" class="hover:bg-gray-300 hover:text-blue-900 px-4 rounded transition">ABOUT</a>
+        <a href="product.html" class="hover:bg-gray-300 hover:text-blue-900 px-4 rounded transition">PRODUCT</a>
+        <a href="contact.html" class="hover:bg-gray-300 hover:text-blue-900 px-4 rounded transition">CONTACT</a>        
+    </nav>
+</div>
+<script>
+
+const hambergerButton = document.getElementById('hamberger');
+const hambergerMenu = document.getElementById('hamberger-menu');
+
+hambergerButton.addEventListener('click', () => {
+  hambergerMenu.classList.toggle('hidden'); 
+});
+     
+</script>
+<br>
+<br>
+ <!-- Product Section -->
+ <section class="container mx-auto px-6 py-8">
+    <h1 class="text-4xl font-bold text-white text-center mb-4">Product</h1>
+    <br>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <!-- Card Template -->
+        <div class="bg-white rounded-lg shadow-md p-4 text-center hover:shadow-lg transition">
+            <img src="https://img.tapimg.net/market/lcs/da5465daeabbe6b7f7c697815a1fc3fa_360_v2.png" alt="App Icon" class="mx-auto mb-4">
+            <h3 class="text-xl font-semibold">Honkai Star Rail</h3>
+            <p class="text-gray-600 mt-2">HoyoGame</p>
+            <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Download</button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 text-center hover:shadow-lg transition">
+            <img src="https://cdn2.steamgriddb.com/icon/f3847e60d44a1cec725613bf618591bb.png" alt="App Icon" class="mx-auto mb-4">
+            <h3 class="text-xl font-semibold">Zen less Zone Zero</h3>
+            <p class="text-gray-600 mt-2">HoyoGame</p>
+            <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Download</button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 text-center hover:shadow-lg transition">
+            <img src="https://cdn2.steamgriddb.com/icon_thumb/73e5080f0f3804cb9cf470a8ce895dac.png" alt="App Icon" class="mx-auto mb-4">
+            <h3 class="text-xl font-semibold">GenshiImpact</h3>
+            <p class="text-gray-600 mt-2">HoyoGame</p>
+            <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Download</button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 text-center hover:shadow-lg transition">
+            <img src="https://i.pinimg.com/736x/51/25/37/5125376df13eb5570308e2aa4eae454f.jpg" alt="App Icon" class="mx-auto mb-4">
+            <h3 class="text-xl font-semibold">honkai impact</h3>
+            <p class="text-gray-600 mt-2">HoyoGame</p>
+            <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Download</button>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+</section>
+      <br>   
+      <br>
+      <br>
+     <br>
+      <!-- Footer-->
+      <footer class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+          <p>&copy; 2024 IT World. All right reserved</p>
+          <p class="mt-2">Follow us in sociala media for the lasted updaate.</p>
+        </div>
+      </footer>
+
+
+
+
+
+</body>
+</html>
